@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-// import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import myReducers from './reducers';
+import {legacy_createStore as createStore} from 'redux';
 
-import {createStore} from 'redux';
-import {Provider} from 'react-redux'
-import myReducers from './reducers'
-
-
-//Create the store
+// Create the store
 const myStore = createStore(myReducers);
 
 //This will console log the current state everytime the state changes
