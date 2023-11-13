@@ -18,6 +18,7 @@ h1 {
   }
   form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
   }
@@ -29,6 +30,11 @@ h1 {
   .todo {
     display: flex;
     flex-direction: column;
+  }
+  #invalid-input {
+    flex-basis: 100%;
+    color: red;
+    display: none
   }
     
   button {
